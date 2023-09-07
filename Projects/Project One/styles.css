@@ -1,0 +1,127 @@
+/*  Universal Styles  */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 17%);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Turret Road', cursive;
+    font-size: 4rem;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #fece00;
+    font-weight: 400;
+}
+
+/*  Header Section  */
+header {
+    width: 100%;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    width: 20rem;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav li {
+    padding: 0.5rem 1rem;
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+}
+
+
+/*  Banner Section  */
+#banner h1 {
+    margin: 1rem auto;
+}
+
+#banner img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+#banner h2 {
+    margin: 1rem auto;
+    width: 75%;
+}
+
+/*  Who Section  */
+#who .header {
+    background-color: #fece00;
+    background-image: url(./images/construction.jpg);
+    background-repeat: repeat-x;
+}
+
+#who .flex-container {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#who .profile {
+    flex: 1 1 auto;
+    padding: 0.5rem 0.5rem;
+}
+
+/*  When Section  */
+#when {
+    background-color: black;
+}
+
+#when .container {
+    position: relative;
+    text-align: center;
+}
+
+#when .container h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#when .container .planet {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    width: 15%;
+}
+
+#when h2 {
+    background-color: hsl(0, 0%, 17%);
+    padding: 2rem 2rem;
+}
+
+/* Footer Section  */
+footer {
+    background-color: #fece00;
+    max-height: 4rem;
+    overflow: hidden;
+}

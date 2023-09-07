@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+header .item-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  column-gap: 280px;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+}
+
+nav ul li a {
+  padding: 0 5px;
+}
+
+a {
+  color: black;
+  font-weight: 600;
+}
+
+section {
+  padding: 16px 0;
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+#AboutMe .aboutme-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#AboutMe .aboutme-text-container {
+  flex-shrink: 1;
+  max-width: 50%;
+}
+
+#AboutMe img {
+  flex-shrink: 1;
+  max-width: 9rem;
+  border-radius: 50%;
+}
+
+details.project {
+  margin: 16px 0;
+}
+
+.project-title {
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.project-title h3 {
+  display: inline;
+}
+
+#Projects img {
+  max-width: 400px;
+}
+
+.project-description {
+  max-width: 50%;
+}
+
+footer {
+  text-align: center;
+}
+
+.heart {
+  color: red;
+}
