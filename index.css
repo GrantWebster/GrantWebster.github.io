@@ -1,43 +1,49 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
 body {
-  max-width: 900px;
   margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
+  max-width: 56.25rem;
+  height: 100%;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 80%);
 }
 
-header .flex-container {
+header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  height: 80px;
-  margin-bottom: 30px;
+  max-width: 56.25rem;
+  height: 100px;
 }
 
-header .item-container {
+#logo {
+  font-size: 3rem;
+  font-family: 'Dosis', sans-serif;
+}
+
+nav {
   display: flex;
   align-items: baseline;
-  justify-content: center;
-  column-gap: 280px;
+  width: 100%;
 }
 
-nav li {
+.nav-bar {
+  margin-left: auto;
+}
+
+.nav-item {
+  padding: 0 5px;
   display: inline;
   list-style-type: none;
 }
 
-nav ul li a {
-  padding: 0 5px;
-}
-
 a {
-  color: black;
+  color: hsl(0, 2%, 95%);
   font-weight: 600;
 }
 
@@ -49,20 +55,30 @@ h2 {
   margin-bottom: 12px;
 }
 
-#AboutMe .aboutme-container {
+.aboutme-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
-#AboutMe .aboutme-text-container {
+.aboutme-text-container {
+  margin-right: 1rem;
   flex-shrink: 1;
-  max-width: 50%;
+  width: 60%;
 }
 
-#AboutMe img {
-  flex-shrink: 1;
-  max-width: 9rem;
+.aboutme-text-container h2 {
+  margin-top: 0;
+}
+
+.aboutme-text-container p {
+  color: #808080;
+}
+
+#about-me img {
+  width: 9rem;
+  height: 9rem;
+  margin: 10px 10px;
+  flex-shrink: 0;
+  opacity: 0.8;
   border-radius: 50%;
 }
 
@@ -74,13 +90,22 @@ details.project {
   list-style: none;
   cursor: pointer;
   margin-bottom: 12px;
+  color: #808080;
 }
 
 .project-title h3 {
   display: inline;
 }
 
-#Projects img {
+#projects a {
+  opacity: 0.5;
+}
+
+#projects a:hover {
+  opacity: 1;
+}
+
+#projects img {
   max-width: 400px;
 }
 
@@ -88,10 +113,37 @@ details.project {
   max-width: 50%;
 }
 
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-container i {
+  height: 32px;
+  flex: 1 1 auto;
+  margin-top: 8px;
+  padding: 8px 8px;
+} 
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-container i {
+  flex: 1 1 auto;
+  margin: 8px 8px;
+  padding: 10px 10px;
+}
+
 footer {
+  margin-top: auto;
+  flex-shrink: 1;
   text-align: center;
 }
 
-.heart {
-  color: red;
+@media only screen and (max-width: 600px) {
+  .aboutme-container {
+    flex-direction: column;
+  }
 }
