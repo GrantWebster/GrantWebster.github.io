@@ -159,7 +159,28 @@ footer {
   text-align: center;
 }
 
-@media only screen and (max-width: 619px) {
+@media only screen and (max-width: 560px) {
+  
+  header nav {
+    display: block;
+  }
+
+  .nav-bar {
+    margin: 1rem 0;
+    padding-left: 0;
+  }
+
+
+  .aboutme-container {
+    flex-direction: column;
+  }
+
+  #logo {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 620px) {
   
   .aboutme-container {
     flex-direction: column;
@@ -168,12 +189,20 @@ footer {
   #logo {
     font-size: 1.5rem;
   }
+
+  .nav-item a {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 620px) and (max-width: 748px) { 
 
   #logo {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+
+  .nav-bar {
+    padding-left: 0;
   }
 
 }
