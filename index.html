@@ -26,11 +26,15 @@
   </header>
 
   <main>
+
+    <h2>Hello <span id="firstname"></span></h2>
+    <p>Thank you for visiting my portfolio.</p>
+
     <section id="about-me">
       <h2>About Me</h2>
       <div class="aboutme-container">
         <div class="aboutme-text-container">
-          <p>Hi! I'm Grant, a front end web developer, welcome to my portfolio.</p>
+          <p>I'm Grant, a front end web developer, welcome to my portfolio.</p>
           <p>I have previous backgrounds in concept art (Diploma) and graphic design (Degree) three years which were at a top ad agency.</p>
           <p>I hold a Specialty Coffee Association barista certificate and a Canadian Ski Instructors Alliance, Level 2 Certification.</p>
           <p>In my free time I have an equal love for adventuring and keeping fit outdoors in the wildness and chilling with a good series or gaming.</p>
@@ -90,6 +94,17 @@
   <footer>
     <p>Consciously made with <i class="fa-solid fa-heart" style="color: #cc0000;"></i></p>
   </footer>
+
+  <script>
+    let first = prompt("Hi, who are you?");
+
+    if (first == null || first == "") {
+      document.getElementById("firstname").innerHTML = "Stranger";
+    } else {
+      document.getElementById('firstname').innerHTML = first;
+    }
+
+  </script>
 
 </body>
 
