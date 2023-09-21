@@ -29,6 +29,54 @@ body {
   color: hsl(0, 0%, 80%);
 }
 
+dialog {
+  align-self: center;
+  justify-self: center;
+  z-index: 10;
+  background-color: hsl(0, 0%, 8%);
+  border: none;
+}
+
+dialog h1 {
+  font-size: 3rem;
+  font-family: 'Impact_Label_Reversed', sans-serif;
+  color: hsl(0, 0%, 80%);
+}
+
+input[type=text] {
+  width: 70%;
+  padding: 10px 20px;
+  margin: 8px 30px 8px 0px;
+  font-size: 18px;
+  display: inline-block;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 80%);
+  border: none;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  box-sizing: border-box;
+  outline: none;
+}
+
+#submit-button {
+  background-color: hsl(0, 0%, 60%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#submit-button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
+dialog::backdrop {
+  background-color: hsl(0, 0%, 8%);
+}
+
 header {
   display: flex;
   align-items: center;

@@ -13,6 +13,15 @@
 
 <body>
 
+    <!-- A modal dialog containing a username input form -->
+    <dialog id="greeting-dialog" role="dialog" aria-labelledby="dialogTitle">
+      <h1 id="dialogTitle">"Hello virtual traveler"</h1>
+      <form novalidate>
+        <input type="text" id="get-user-name" name="name" placeholder="Who are you?">
+        <button type="submit" id="submit-button" value="default"> Submit </button>
+      </form>
+    </dialog>
+
   <header>
     <nav>
       <h1 id="logo">Grant Webster</h1>
@@ -27,7 +36,7 @@
 
   <main>
 
-    <h2>Hello <span id="firstname"></span></h2>
+    <h2>Hello <span id="user-name">Stranger</span></h2>
     <p>Thank you for visiting my portfolio.</p>
 
     <section id="about-me">
@@ -95,16 +104,7 @@
     <p>Consciously made with <i class="fa-solid fa-heart" style="color: #cc0000;"></i></p>
   </footer>
 
-  <script>
-    let first = prompt("Hi, who are you?");
-
-    if (first == null || first == "") {
-      document.getElementById("firstname").innerHTML = "Stranger";
-    } else {
-      document.getElementById('firstname').innerHTML = first;
-    }
-
-  </script>
+  <script src="./greeting.js"></script>
 
 </body>
 
