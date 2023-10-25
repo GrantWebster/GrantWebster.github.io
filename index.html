@@ -1,110 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grant Webster Portfolio</title>
-    <link rel="stylesheet" href="./index.css" type="text/css" charset="utf-8"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8f8bbe7944.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.min.css"/>
+  <link rel="stylesheet" href="./css/default.css" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8f8bbe7944.js" crossorigin="anonymous"></script>
+  <title>Grant Webster Portfolio</title>
 </head>
 
-<body>
+<body class="page-style">
 
-    <!-- A modal dialog containing a username input form -->
-    <dialog id="greeting-dialog" role="dialog" aria-labelledby="dialogTitle">
-      <h1 id="dialogTitle">"Hello virtual traveler"</h1>
-      <form novalidate>
-        <input type="text" id="get-user-name" name="name" placeholder="Who are you?">
-        <button type="submit" id="submit-button" value="default"> Submit </button>
-      </form>
-    </dialog>
+  <!-- A modal dialog containing a username input form -->
+  <dialog id="greeting-dialog" class="greeting-dialog" role="dialog" aria-labelledby="dialogTitle">
+    <h1 class="dialogTitle">"Hello virtual traveler"</h1>
+    <form novalidate>
+      <input class="dialog-input" type="text" id="get-user-name" name="name" placeholder="Who are you?">
+      <button class="submit-button" type="submit" id="submit-button" value="default"> Submit </button>
+    </form>
+  </dialog>
 
-  <header>
-    <nav>
-      <h1 id="logo">Grant Webster</h1>
+  <header class="header">
+    <nav class="nav-flex-container">
+      <a class="logo-link" href="./index.html"><h1 class="logo">Grant Webster</h1></a>
       <ul class="nav-bar">
-        <li class="nav-item"><a href="#about-me">About Me</a></li>
-        <li class="nav-item"><a href="#projects">Projects</a></li>
-        <li class="nav-item"><a href="#skills">Skills</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a></li>
+        <li class="nav-item"><a href="#about-me" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>  
   </header>
 
-  <main>
+  <main class="main-content">
 
-    <h2>Hello <span id="user-name">Stranger</span></h2>
-    <p>Thank you for visiting my portfolio.</p>
+    <div class="welcome-message"> 
+      <h2>Hello <span id="user-name">Stranger</span></h2>
+      <p>Thank you for visiting...</p>
+    </div>
 
-    <section id="about-me">
+    <section id="about-me" class="section-margin">
       <h2>About Me</h2>
-      <div class="aboutme-container">
-        <div class="aboutme-text-container">
+      <div class="about-me-flex-container">
+        <div class="about-me-content">
+          <img class="profile-photo" src="./images/GW Profile 300px.jpg" alt="Grant Webster Photo">
           <p>I'm Grant, a front end web developer, welcome to my portfolio.</p>
           <p>I have previous backgrounds in concept art (Diploma) and graphic design (Degree) three years which were at a top ad agency.</p>
           <p>I hold a Specialty Coffee Association barista certificate and a Canadian Ski Instructors Alliance, Level 2 Certification.</p>
           <p>In my free time I have an equal love for adventuring and keeping fit outdoors in the wildness and chilling with a good series or gaming.</p>
         </div>
-        <img src="./images/GW Profile 300px.jpg" alt="Grant Webster Photo">
       </div>
     </section>
     
-    <section id="projects">
+    <section id="projects" class="section-margin">
       <h2>Projects</h2>
-      <details class="project">
+      <details class="project-details">
         <summary class="project-title">
           <i class="fa-solid fa-arrow-right fa-xs"></i><h3>  A responsive club website</h3>
         </summary>
-        <a href="./Projects/Project One/index.html">
-          <img src="./images/Project One.jpg" alt="">
+        <a class="project-links" href="./Projects/Project One/index.html">
+          <img class="project-images" src="./images/Project One.jpg" alt="">
         </a>
         <p class="project-description">A responsive website for a fictitious club, built with html and css. I chose to create a gaming club of one of my favorite games Deep Rock Galactic.</p>
       </details>
-      <details class="project">
+      <details class="project-details">
         <summary class="project-title">
           <i class="fa-solid fa-arrow-right fa-xs"></i><h3>  Project Two</h3>
         </summary>
-        <a href="">
-          <img src="" alt="">
+        <a class="project-links" href="">
+          <img class="project-images" src="" alt="">
         </a>
         <p class="project-description"></p>
       </details>
-      <details class="project">
+      <details class="project-details">
         <summary class="project-title">
           <i class="fa-solid fa-arrow-right fa-xs"></i><h3>  Project Three</h3>
         </summary>
-        <a href="">
-          <img src="" alt="">
+        <a class="project-links" href="">
+          <img class="project-images" src="" alt="">
         </a>
         <p class="project-description"></p>
       </details>
 
     </section>
 
-    <section id="skills">
+    <section id="skills" class="section-margin">
       <h2>Skills</h2>
       <div class="skills-container">
-        <i class="fa-brands fa-html5 fa-2xl" style="color: #808080;"></i>
-        <i class="fa-brands fa-css3-alt fa-2xl" style="color: #808080;"></i>
-        <i class="fa-brands fa-js fa-2xl" style="color: #808080;"></i>
-        <i class="fa-brands fa-git fa-2xl" style="color: #808080;"></i>
-        <i class="fa-solid fa-terminal fa-2xl" style="color: #808080;"></i>
-        <i class="fa-brands fa-github fa-2xl" style="color: #808080;"></i>
-        <i class="fa-brands fa-squarespace fa-2xl" style="color: #808080;"></i>
-        <i class="fa-brands fa-discord fa-2xl" style="color: #808080;"></i>
-        <i class="fa-brands fa-trello fa-2xl" style="color: #808080;"></i>
+        <i class="fa-brands fa-html5 icon"></i>
+        <i class="fa-brands fa-css3-alt icon"></i>
+        <i class="fa-brands fa-js icon"></i>
+        <i class="fa-brands fa-git icon"></i>
+        <i class="fa-solid fa-terminal icon"></i>
+        <i class="fa-brands fa-github icon"></i>
+        <i class="fa-brands fa-squarespace icon"></i>
+        <i class="fa-brands fa-discord icon"></i>
+        <i class="fa-brands fa-trello icon"></i>
       </div>
     </section>
 
   </main>
-  <footer>
+  <footer class="footer">
     <p>Consciously made with <i class="fa-solid fa-heart" style="color: #cc0000;"></i></p>
   </footer>
 
-  <script src="./greeting.js"></script>
+  <script src="./JavaScript/greeting.js"></script>
 
 </body>
 

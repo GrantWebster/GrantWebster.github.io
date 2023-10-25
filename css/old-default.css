@@ -1,21 +1,28 @@
-* {
+/* Reset Border Box */
+html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 @font-face{ 
 	font-family: 'Impact_Label';
-	src: url('./fonts/Impact_Label-webfont.woff') format('woff');
+	src: url('../fonts/Impact_Label-webfont.woff') format('woff');
 }
 
 @font-face{ 
 	font-family: 'Impact_Label_Reversed';
-	src: url('./fonts/Impact_Label_Reversed-webfont.woff') format('woff');
+	src: url('../fonts/Impact_Label_Reversed-webfont.woff') format('woff');
 }
 
 @font-face{ 
 font-family: 'COPYN';
-src: url('./fonts/COPYN___-webfont.woff') format('woff');
+src: url('../fonts/COPYN___-webfont.woff') format('woff');
 }
 
 body {
@@ -25,19 +32,23 @@ body {
   flex-direction: column;
   max-width: 56.25rem;
   min-height: 100vh;
-  background-color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 12%);
   color: hsl(0, 0%, 80%);
 }
 
-dialog {
+#greeting-dialog {
   align-self: center;
   justify-self: center;
+  text-align: center;
   z-index: 10;
-  background-color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 12%);
   border: none;
+
 }
 
-dialog h1 {
+#dialogTitle {
+  padding: 0 auto;
+  text-align: center;
   font-size: 3rem;
   font-family: 'Impact_Label_Reversed', sans-serif;
   color: hsl(0, 0%, 80%);
@@ -46,10 +57,11 @@ dialog h1 {
 input[type=text] {
   width: 70%;
   padding: 10px 20px;
-  margin: 8px 30px 8px 0px;
+  margin: 10px 20px 40px 20px;
+  text-align: center;
   font-size: 18px;
   display: inline-block;
-  background-color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 12%);
   color: hsl(0, 0%, 80%);
   border: none;
   border-bottom: 1px solid hsl(0, 0%, 80%);
@@ -74,7 +86,7 @@ input[type=text] {
 }
 
 dialog::backdrop {
-  background-color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 12%);
 }
 
 header {
@@ -85,7 +97,7 @@ header {
 }
 
 #logo {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-family: 'Impact_Label_Reversed', 'Dosis', sans-serif;
   color: hsl(0, 0%, 90%);
 }
@@ -207,6 +219,7 @@ footer {
   text-align: center;
 }
 
+/*
 @media only screen and (max-width: 560px) {
   
   header nav {
@@ -254,3 +267,5 @@ footer {
   }
 
 }
+
+*/
