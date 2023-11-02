@@ -52,13 +52,13 @@ src: url('../fonts/COPYN___-webfont.woff') format('woff');
   background-color: hsl(0, 0%, 12%);
   color: hsl(0, 0%, 80%);
   border: none;
-  border-bottom: 1px solid hsl(0, 0%, 80%);
+  border-bottom: 1px solid hsl(0, 0%, 66%);
   box-sizing: border-box;
   outline: none;
 }
 
 .submit-button {
-  background-color: hsl(0, 0%, 60%);
+  background-color: hsl(0, 0%, 34%);
   border: none;
   border-radius: 10px;
   color: white;
@@ -70,7 +70,7 @@ src: url('../fonts/COPYN___-webfont.woff') format('woff');
 }
 
 .submit-button:hover {
-  background-color: hsl(0, 0%, 40%);
+  background-color: hsl(0, 0%, 28%);
 }
 
 .greeting-dialog::backdrop {
@@ -113,7 +113,7 @@ h3 {
 
 p {
   font-family: 'Open Sans', sans-serif;
-  color: #808080;
+  color: hsl(0, 0%, 66%);
 }
 
 /*
@@ -134,7 +134,7 @@ p {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  border-bottom: 1px solid #808080;
+  border-bottom: 1px solid hsl(0, 0%, 66%);;
 }
 
 .nav-bar {
@@ -150,7 +150,7 @@ p {
 
 .nav-link {
   font-family: 'Open Sans', sans-serif;
-  color: hsl(0, 2%, 95%);
+  color: hsl(0, 0%, 95%);
 }
 
 .section-margin {
@@ -181,7 +181,7 @@ p {
   list-style: none;
   cursor: pointer;
   margin-bottom: 0.75rem;
-  color: #808080;
+  color: hsl(0, 0%, 66%);
   max-width: fit-content;
 }
 
@@ -215,14 +215,10 @@ p {
   flex: 0 0;
   margin: 0.5rem 0.5rem;
   text-align: center;
-<<<<<<< HEAD
-=======
-
->>>>>>> 050700f08360a6d9b034e5d3f37506eef041679f
 }
 
 .icon {
-  color: #808080;
+  color: hsl(0, 0%, 66%);
   font-size: 2rem;
 }
 
